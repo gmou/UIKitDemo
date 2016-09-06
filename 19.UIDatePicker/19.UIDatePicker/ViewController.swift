@@ -13,6 +13,20 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let datePicker = UIDatePicker(frame: CGRectMake(100, 100, 200, 200))
+        
+        // 设置显示模式
+        datePicker.datePickerMode = .Time
+        
+        datePicker.addTarget(self, action: #selector(ViewController.changeDate), forControlEvents: .ValueChanged)
+        
+        self.view.addSubview(datePicker)
+        
+    }
+    
+    func changeDate(datePicker: UIDatePicker) {
+        print(datePicker.date)
     }
 
     override func didReceiveMemoryWarning() {

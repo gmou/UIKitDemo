@@ -31,15 +31,15 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         componentOneValue = data?.first?.0
         componentTwoValue = data?.first?.1
         
-        pickerView.selectRow(0, inComponent: 0, animated: false)
-        
         self.view.addSubview(pickerView)
         
     }
     
+    // 设置列数
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 2
     }
+    // 设置每列数量
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         if component == 0 {
             return (data?.keys.count)!
@@ -49,7 +49,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         }
         return 0
     }
-    
+    // 设置每列显示的内容
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
         if component == 0 {
@@ -62,7 +62,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         }
         return nil
     }
-    
+    // 监听点击事件选中，当点击第一列 设置第二列显示的内容
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         print("didSelectRow_%d_%d", component, row)
         if component == 0 {

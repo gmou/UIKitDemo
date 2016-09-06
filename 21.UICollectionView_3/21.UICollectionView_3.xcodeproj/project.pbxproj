@@ -13,6 +13,7 @@
 		B50BB49E1D7D9F290035F89A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B50BB49D1D7D9F290035F89A /* Assets.xcassets */; };
 		B50BB4A11D7D9F290035F89A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B50BB49F1D7D9F290035F89A /* LaunchScreen.storyboard */; };
 		B50BB4AC1D7D9F290035F89A /* _1_UICollectionView_3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50BB4AB1D7D9F290035F89A /* _1_UICollectionView_3Tests.swift */; };
+		B50BB4B71D7D9F550035F89A /* MyLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50BB4B61D7D9F550035F89A /* MyLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		B50BB4A71D7D9F290035F89A /* 21.UICollectionView_3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 21.UICollectionView_3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B50BB4AB1D7D9F290035F89A /* _1_UICollectionView_3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _1_UICollectionView_3Tests.swift; sourceTree = "<group>"; };
 		B50BB4AD1D7D9F290035F89A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B50BB4B61D7D9F550035F89A /* MyLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyLayout.swift; path = ../MyLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		B50BB4951D7D9F290035F89A /* 21.UICollectionView_3 */ = {
 			isa = PBXGroup;
 			children = (
+				B50BB4B61D7D9F550035F89A /* MyLayout.swift */,
 				B50BB4961D7D9F290035F89A /* AppDelegate.swift */,
 				B50BB4981D7D9F290035F89A /* ViewController.swift */,
 				B50BB49A1D7D9F290035F89A /* Main.storyboard */,
@@ -197,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B50BB4B71D7D9F550035F89A /* MyLayout.swift in Sources */,
 				B50BB4991D7D9F290035F89A /* ViewController.swift in Sources */,
 				B50BB4971D7D9F290035F89A /* AppDelegate.swift in Sources */,
 			);
